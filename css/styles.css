@@ -29,9 +29,13 @@ h1 span {
   background-clip: text;
 }
 
-
 #inicio .container {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px; /* Navbar height fix*/
+  flex-direction: column;
 }
 
 .textContainer p {
@@ -73,7 +77,6 @@ h1 span {
     opacity: 0.5;
   }
 }
-
 
 #arrowIcon {
   animation: arrow-animation 3s infinite;
@@ -144,15 +147,16 @@ h2 {
 
 /* FIN SECCION SERVICIOS */
 
-form span{
-font-weight: 500;
-font-size: 14px;
-color: white;
-display: block;
-margin-bottom: 1em;
+form span {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  display: block;
+  margin-bottom: 1em;
 }
 
-input, textarea{
+input,
+textarea {
   background-color: var(--color-secondary);
   border: none;
   color: white;
@@ -160,15 +164,15 @@ input, textarea{
   margin-bottom: 1em;
 }
 
-input{
+input {
   height: 40px;
 }
 
-textarea{
+textarea {
   height: 95px;
 }
 
-button{
+button {
   background-color: var(--color-accent);
   color: white;
   font-size: 14px;
@@ -178,14 +182,14 @@ button{
   width: 100%;
 }
 
-#contacto p{
- border: 2px solid var(--color-accent);
+#contacto p {
+  border: 2px solid var(--color-accent);
   color: white;
   padding: 1em;
   border-radius: 2px;
   -webkit-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
--moz-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
+  -moz-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
+  box-shadow: inset 0px 0px 100px 0px var(--color-accent);
 }
 
 /* Navbar */
