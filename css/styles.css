@@ -36,6 +36,7 @@ h1 span {
   justify-content: center;
   padding-bottom: 80px; /* Navbar height fix*/
   flex-direction: column;
+  gap: 1em;
 }
 
 .textContainer p {
