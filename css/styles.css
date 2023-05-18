@@ -1,0 +1,326 @@
+@import url(https://fonts.bunny.net/css?family=poppins:100,200,300,400,500,600,700,800);
+
+:root {
+  --color-primary: #100f20;
+  --color-secondary: #201e3d;
+  --color-accent: #d12a96;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+h1 span {
+  background: linear-gradient(124.21deg, var(--color-accent), #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#inicio .container {
+  padding: 0 30px;
+  margin-top: 80px;
+}
+
+.textContainer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#btnServicios,
+#btnContacto {
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  width: 100%;
+}
+
+#btnServicios {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+}
+
+#btnContacto {
+  background: rgba(236, 35, 165, 0.17);
+  color: var(--color-accent);
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+#arrowIcon {
+  animation: arrow-animation 3s infinite;
+}
+
+/* FIN SECCION INICIO */
+
+h2 {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.titleContainer {
+  background: rgba(236, 35, 165, 0.17);
+  padding: 0.5em 1em;
+  width: fit-content;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  user-select: none;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(188, 37, 135, 0.65);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(188, 37, 135, 0.65);
+  box-shadow: 0px 0px 50px -4px rgba(188, 37, 135, 0.45);
+}
+
+#sobreNosotros,
+#servicios,
+#contacto {
+  padding: 0 15px;
+}
+
+.highlight {
+  color: white;
+}
+
+#sobreNosotros p {
+  color: #b0b0b0;
+}
+
+/* FIN SECCION SOBRE NOSOTROS */
+
+.card {
+  padding: 1em;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+}
+
+.card h3 {
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.card p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card a {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-accent);
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* FIN SECCION SERVICIOS */
+
+form span{
+font-weight: 500;
+font-size: 14px;
+color: white;
+display: block;
+margin-bottom: 1em;
+}
+
+input, textarea{
+  background-color: var(--color-secondary);
+  border: none;
+  color: white;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input{
+  height: 40px;
+}
+
+textarea{
+  height: 95px;
+}
+
+button{
+  background-color: var(--color-accent);
+  color: white;
+  font-size: 14px;
+  border-radius: 2px;
+  border: none;
+  padding: 0.5em;
+  width: 100%;
+}
+
+#contacto p{
+ border: 2px solid var(--color-accent);
+  color: white;
+  padding: 1em;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
+-moz-box-shadow: inset 0px 0px 100px 0px var(--color-accent);
+box-shadow: inset 0px 0px 100px 0px var(--color-accent);
+}
+
+/* Navbar */
+nav,
+.navbar-subContainer {
+  transition: 0.1s;
+  height: 80px;
+}
+
+.navbar a {
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.custom-toggler {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.line:first-child {
+  top: calc(50%);
+}
+
+.line:last-child {
+  top: calc(50%);
+}
+
+.navbar-toggler[aria-expanded="true"] .line:first-child {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .line:last-child {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler:not([aria-expanded="true"]) .line:first-child {
+  transform: translateY(-4px);
+}
+
+.navbar-toggler:not([aria-expanded="true"]) .line:last-child {
+  transform: translateY(4px);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 25px;
+  position: absolute;
+}
+
+.bg-color {
+  background: rgba(37, 35, 61, 0.5);
+  backdrop-filter: blur(7.5px);
+}
+
+.navbar-nav {
+  transition: 0.3s;
+}
+
+.navbar-subContainer.scrolled {
+  background-color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.navbar-toggler.scrolled {
+  background-color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.navbar-subContainer {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.nav-item {
+  border-radius: 5px;
+}
+
+.nav-item.bg-color {
+  background-color: var(--color-accent);
+  transition: 0.3s;
+}
+
+.navbar-brand {
+  left: 25px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s !important;
+}
+
+.mostrar {
+  opacity: 1;
+  transition: 0.2s !important;
+}
