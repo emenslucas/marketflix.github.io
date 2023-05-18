@@ -8,37 +8,17 @@ $(function () {
   var $navbarToggler = $(".navbar-toggler");
   var $navbarCollapse = $(".navbar-collapse");
 
-  // Detectar el cierre del modo de inspección
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 768) {
-      // Reiniciar el estado de la barra de navegación
-      resetNavbar();
-    } else {
-      $navbarToggler.removeClass("collapsed");
-      $navbarCollapse.addClass("show");
-      $navbarNav.addClass("bg-color");
-    }
-  });
-
-  // Función para restablecer el estado de la barra de navegación
-  function resetNavbar() {
-    // Cerrar el menú desplegable y restablecer las clases de la barra de navegación
-    $navbarToggler.addClass("collapsed");
-    $navbarCollapse.removeClass("show");
-    $navbarNav.removeClass("bg-color");
-  }
-
   function updateNavbarSubContainerWidth() {
     var isCollapseHidden =
       $(".navbar-collapse").is(":hidden") ||
       $(".navbar-collapse").hasClass("show");
 
     if (isCollapseHidden) {
-      //MOBILE
+      // MOBILE
       $navbarSubContainer.css("width", "100%");
       $navbar.removeClass("scrolled", $(window).scrollTop() > 0);
     } else {
-      //ESCRITORIO
+      // ESCRITORIO
       $navbarSubContainer.css("width", "0%");
       $navbarSubContainer.removeClass("scrolled");
       $navbar.toggleClass("scrolled", $(window).scrollTop() > 0);
