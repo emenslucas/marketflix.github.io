@@ -78,7 +78,7 @@ h1 span {
 #arrowIcon {
   animation: arrow-animation 3s infinite;
   position: absolute;
-  bottom: 160px;
+  bottom: 40px;
 }
 
 /* FIN SECCION INICIO */
