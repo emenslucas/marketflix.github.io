@@ -174,31 +174,38 @@
         </div>
 
         <form
-          action="https://formsubmit.co/mirilianomijaslive@gmail.com"
+          action="https://formsubmit.co/mirilianomijaslive@gmail.com "
           method="POST"
         >
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://www.youtube.com/watch?v=Yg6POD0M30w&ab_channel=ADesignerWhoCodes"
+          />
           <div class="row">
             <div class="col-12 col-lg-6">
               <label for="name">Nombre:</label>
-              <input type="text" name="name" required />
+              <input type="text" name="name" id="name" required />
             </div>
             <div class="col-12 col-lg-6">
               <label for="surname">Apellido:</label>
-              <input type="text" name="surname" required />
+              <input type="text" name="surname" id="surname" required />
             </div>
             <div class="col-12 col-lg-6">
               <label for="email">Email:</label>
-              <input type="email" name="email" required />
+              <input type="email" name="email" id="email" required />
             </div>
             <div class="col-12 col-lg-6">
               <label for="telephone">Teléfono:</label>
-              <input type="text" name="telephone" required />
+              <input type="text" name="telephone" id="telephone" required />
             </div>
           </div>
           <div class="row">
             <div class="col-12">
               <label for="message">Mensaje:</label>
-              <textarea name="message"></textarea>
+              <textarea name="message" id="message"></textarea>
             </div>
           </div>
           <div class="row">
@@ -207,11 +214,6 @@
             </div>
           </div>
           <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://yourdomain.co/thanks.html"
-          />
           <!-- Pagina de agradecimiento custom -->
         </form>
       </div>
