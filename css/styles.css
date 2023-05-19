@@ -329,3 +329,22 @@ footer{
   height: 60px;
   background-color: var(--color-secondary);
 }
+
+footer svg{
+  width: 20px; 
+  fill: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+footer svg:hover{
+  width: 20px; 
+  fill: var(--color-accent);
+  transition: 0.3s;
+}
+
+.iconsContainer{
+  display: flex;
+  gap: 0.6em;
+}
+
+
