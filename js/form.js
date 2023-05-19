@@ -1,3 +1,3 @@
 function alerta() {
-  alert("Mensaje enviado! Te estaremos contactando proximamente");
+  alert("Mensaje enviado! Te estaremos contactando pronto.");
 }
