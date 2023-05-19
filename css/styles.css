@@ -124,6 +124,7 @@ h2 {
   padding: 1em;
   background-color: var(--color-secondary);
   border-radius: 2px;
+  height: 100%;
 }
 
 .card h3 {
