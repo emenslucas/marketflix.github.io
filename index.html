@@ -176,15 +176,8 @@
         <form
           action="https://formsubmit.co/mirilianomijaslive@gmail.com "
           method="POST"
-          onsubmit="alerta();"
+          onsubmit="setFormSubmitted()"
         >
-          <input type="text" name="_honey" style="display: none" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://emenslucas.github.io/marketflix.github.io/"
-          />
           <div class="row">
             <div class="col-12 col-lg-6">
               <label for="name">Nombre:</label>
@@ -209,12 +202,20 @@
               <textarea name="message" id="message"></textarea>
             </div>
           </div>
+          <input type="hidden" name="formSubmitted" value="true" />
           <div class="row">
             <div class="col-12">
               <button type="submit">Enviar mensaje</button>
             </div>
           </div>
           <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display: none" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/index.html"
+          />
+
           <!-- Pagina de agradecimiento custom -->
         </form>
       </div>
