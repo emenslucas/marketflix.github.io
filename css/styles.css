@@ -6,6 +6,7 @@
   --color-accent: #d12a96;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-primary);
@@ -348,4 +349,14 @@ footer svg:hover{
   gap: 0.6em;
 }
 
+/* PAGINA SERVICIOS */
+
+#serviciosPage{
+  margin-bottom: 0;
+}
+
+#serviciosPage .container {
+  height: 100%;
+  height: calc(100vh - 60px);
+}
 
