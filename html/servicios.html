@@ -81,75 +81,131 @@
     </header>
 
     <section id="serviciosPage">
-      <div class="container d-flex align-items-center justify-content-center">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
+      <div class="container d-flex align-items-center flex-column justify-content-center mt-lg-0 mb-lg-0">
+        <div class="scrollspy">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">    
+            <div class="row w-100">
+              <div class="col-12 col-lg-4 mb-3">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Gestión de redes sociales
+                  </button>
+                </li>
+              </div>
+            
+              <div class="col-12 col-lg-4 mb-3">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Diseño web a medida
+                  </button>
+                </li>
+              </div>
+             
+              <div class="col-12 col-lg-4 mb-3">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Marketing y Branding
+                  </button>
+                </li>
+              </div>
+            </div>
+           
+         
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
             >
-              Gestión de redes sociales
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
+            <h2 class="highlight mb-3">¡Impulsa tu presencia en las redes sociales y maximiza tu alcance con nuestro servicio de armado de redes sociales y Community Management! </h2>
+            <p>
+              En la era digital actual, las redes sociales se han convertido en una poderosa herramienta para llegar a tu audiencia, construir una comunidad comprometida y aumentar el reconocimiento de tu marca. En [Nombre de la Empresa], entendemos el potencial de las redes sociales y ofrecemos un servicio completo de armado de redes sociales y Community Management para ayudarte a aprovechar al máximo estas plataformas dinámicas.
+              Este plan incluye: <br>
+              <ul>
+                <li>Creación de cuentas en redes sociales a elección</li> 
+                <li>Creación de plantillas para posteos, historias, reels, historias destacadas.</li> 
+                <li>Branding mínimo, incluído logo, slogan y paleta para dar identidad.</li> 
+                <li> Community managment de contenido.</li>
+                <li>Posteos semanales en feed e historias.</li> 
+                <li>Manejo de comunidad y atención al cliente.</li> 
+              </ul>
+           </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
             >
-              Diseño web a medida
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
+
+            <h2 class="highlight mb-3"> ¡Obtené una presencia en línea profesional y atractiva con nuestro servicio de armado de páginas web!</h2>
+            <p> 
+              En la era digital en la que vivimos, tener una presencia en línea más sólida es esencial para cualquier negocio. Tu página web es tu tarjeta de presentación en el mundo virtual y la clave para atraer a nuevos clientes, construir relaciones duraderas y hacer crecer tu marca. <br>
+              Este plan incluye: <br>
+              <ul>
+                <li>Creación de página web profesional desde cero</li>
+                <li>Creación de landing page eficaz</li>
+                <li>Página responsiva, atractiva y vendedora</li>
+                <li>Mantenimiento de la página:</li>
+                <ul>
+                  <li>Actualizaciones de multimedia (fotos / videos)</li>
+                  <li>Actualizaciones de información de la marca (textos)</li>
+                  <li>Contacto para ventas, preguntas y atención al cliente</li>
+                </ul> 
+              </ul> 
+            </p>
+            
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
             >
-              Marketing y Branding
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-          >
-            Texto ejemplo de redes cociales
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-          >
-            texto de ejemplo de diseño web
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-          >
-            texto de ejemplo de marketing y branding
+            <h2 class="highlight mb-3"> ¡Lleva tu estrategia de marketing al siguiente nivel con nuestro servicio de campañas publicitarias de marketing digital! </h2>
+            <p>
+            En Marketflix, entendemos que en el mundo digital actual, la competencia por la atención del público es feroz. Es por eso que ofrecemos un servicio completo de campañas publicitarias de marketing digital, diseñado para ayudarte a destacar, captar la atención de tu audiencia objetivo y lograr resultados tangibles.
+            Te ayudamos a convertir tu proyecto o emprendimiento en una empresa profesional. <br>
+            Este plan incluye: <br>
+            <ul>
+              <li>Campaña de marketing completa</li>
+              <li>Branding completo desde cero</li>
+              <li>Administrar ads y publicidad con pauta </li>
+              <li>Estrategia de ventas completa</li>
+              <li>Asesoramiento en organización empresarial</li>
+              <li>Profesionalizar el proyecto</li>
+            </ul>
+          </p>
+            </div>
           </div>
         </div>
       </div>

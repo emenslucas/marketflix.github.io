@@ -6,7 +6,6 @@
   --color-accent: #d12a96;
 }
 
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-primary);
@@ -89,7 +88,7 @@ h1 span {
 
 /* FIN SECCION INICIO */
 
-h2 {
+.indexSubtitle {
   font-weight: 500;
   font-size: 12px;
   color: var(--color-accent);
@@ -327,36 +326,81 @@ nav,
   transition: 0.2s !important;
 }
 
-footer{
+footer {
   height: 60px;
   background-color: var(--color-secondary);
 }
 
-footer svg{
-  width: 20px; 
+footer svg {
+  width: 20px;
   fill: rgb(255, 255, 255);
   transition: 0.3s;
 }
 
-footer svg:hover{
-  width: 20px; 
+footer svg:hover {
+  width: 20px;
   fill: var(--color-accent);
   transition: 0.3s;
 }
 
-.iconsContainer{
+.iconsContainer {
   display: flex;
   gap: 0.6em;
 }
 
 /* PAGINA SERVICIOS */
 
-#serviciosPage{
+#serviciosPage {
   margin-bottom: 0;
 }
 
 #serviciosPage .container {
   height: 100%;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
+button .active {
+  background-color: var(--color-accent) !important;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 2px;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: var(--color-accent);
+}
+
+.nav-pills .nav-link {
+  color: var(--color-accent);
+  border: var(--color-accent) 1px solid;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+#pills-tab {
+  display: flex;
+  gap: 1em;
+}
+
+.scrollspy {
+  background-color: var(--color-secondary);
+  padding: 2em;
+  border-radius: 2px;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+
+.serviciosSubtitle {
+  color: var(--color-accent);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#serviciosPage h2 {
+  line-height: 150%;
+}
