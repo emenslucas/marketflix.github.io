@@ -18,11 +18,6 @@ section {
   scroll-margin-top: 100px;
 }
 
-h1 {
-  font-weight: 500;
-  font-size: 24px;
-}
-
 h1 span {
   background: linear-gradient(124.21deg, var(--color-accent), #ffffff);
   -webkit-background-clip: text;
@@ -43,15 +38,15 @@ h1 span {
 .textContainer p {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
-  font-size: 14px;
 }
 
 #btnServicios,
 #btnContacto {
   border-radius: 2px;
   font-weight: 500;
-  font-size: 12px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #btnServicios {
@@ -403,4 +398,82 @@ button .active {
 
 #serviciosPage h2 {
   line-height: 150%;
+}
+
+
+/* Estilos para pantallas más pequeñas que 576px */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  #logo{
+    width: 100px;
+  }
+
+  .textContainer p {
+    font-size: 0.7em;
+  }
+
+  #btnContacto, #btnServicios {
+    font-size: 12px;
+    width: 140px;
+    height: 35px;
+  }
+}
+
+/* Estilos para pantallas más grandes o iguales a 576px y más pequeñas que 768px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 2em;
+  }
+  #logo{
+    width: 125px;
+  }
+  .textContainer p {
+    font-size: 0.8em;
+  }
+
+  #btnContacto, #btnServicios {
+    font-size: 12px;
+    width: 160px;
+    height: 35px;
+  }
+}
+
+/* Estilos para pantallas más grandes o iguales a 768px y más pequeñas que 992px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  #logo{
+    width: 125px;
+  }
+  .textContainer p {
+    font-size: 0.9em;
+  }
+
+  #btnContacto, #btnServicios {
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+  }
+}
+
+/* Estilos para pantallas más grandes o iguales a 992px y más pequeñas que 1200px */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3em;
+  }
+  #logo{
+    width: 150px;
+  }
+  .textContainer p {
+    font-size: 1em;
+  }
+
+  #btnContacto, #btnServicios {
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+  }
 }
