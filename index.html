@@ -77,31 +77,34 @@
 
     <section id="inicio">
       <div class="container">
-        <img id="logo" src="img/logo.svg" alt="" />
-        <div class="textContainer text-center">
-          <h1>¡Bienvenido a <span>Marketflix!</span></h1>
-          <p >
-            Tu socio estratégico en el mundo del <br />
-            marketing digital
-          </p>
-        </div>
-        <div class="row">
-          <div class="col">
-            <a type="button" id="btnServicios" class="btn" href="#servicios"
-              >Servicios</a
-            >
+        <div class="d-flex flex-column justify-content-center align-items-center gap-5">
+          <img id="logo" src="img/logo.svg" alt="" />
+          <div class="textContainer text-center">
+            <h1>¡Bienvenido a <span>Marketflix!</span></h1>
+            <p>
+              Tu socio estratégico en el mundo del <br />
+              marketing digital
+            </p>
           </div>
-          <div class="col">
-            <a type="button" id="btnContacto" class="btn" href="#contacto"
-              >Contactanos</a
-            >
+          <div class="row">
+            <div class="col">
+              <a type="button" id="btnServicios" class="btn" href="#servicios"
+                >Servicios</a
+              >
+            </div>
+            <div class="col">
+              <a type="button" id="btnContacto" class="btn" href="#contacto"
+                >Contactanos</a
+              >
+            </div>
           </div>
         </div>
-        <img
+
+        <a href="#sobreNosotros"><img
           id="arrowIcon"
           src="img/arrow.svg"
           alt="Icono flecha para indicar se hace scroll"
-        />
+        /></a>
       </div>
     </section>
     <section id="sobreNosotros">
@@ -109,14 +112,17 @@
         <div class="titleContainer">
           <h2 class="indexSubtitle">Sobre nosotros</h2>
         </div>
-        <p>
-          Somos una empresa de marketing digital apasionada por el
-          <span class="highlight">crecimiento</span> y el
-          <span class="highlight">éxito</span> de nuestros clientes. En
-          Marketflix, nos dedicamos a ayudar a las empresas a
-          <span class="highlight">destacar</span> en el entorno digital en
-          constante evolución.
-        </p>
+        <div class="d-flex align-items-center">
+          <p>
+            Somos una empresa de marketing digital apasionada por el
+            <span class="highlight">crecimiento</span> y el
+            <span class="highlight">éxito</span> de nuestros clientes. En
+            Marketflix, nos dedicamos a ayudar a las empresas a
+            <span class="highlight">destacar</span> en el entorno digital en
+            constante evolución.
+          </p>
+          <img class="d-lg-block d-none" src="img/megaphone.svg" alt="Icono de megáfono" />
+        </div>
       </div>
     </section>
 

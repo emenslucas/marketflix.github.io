@@ -30,9 +30,9 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px; /* Navbar height fix*/
   flex-direction: column;
   gap: 1em;
+  position: relative;
 }
 
 .textContainer p {
@@ -50,14 +50,27 @@ h1 span {
 }
 
 #btnServicios {
-  background: var(--color-accent);
+  background-color: var(--color-accent);
   color: white;
   border: none;
+  transition: 0.3s;
+}
+
+#btnServicios:hover {
+  transition: 0.3s;
+  background-color: rgba(209, 42, 150);
+  filter: saturate(1.5);
 }
 
 #btnContacto {
-  background: rgba(236, 35, 165, 0.17);
+  background: rgba(112, 15, 78, 0.3);
   color: var(--color-accent);
+  transition: 0.3s;
+}
+
+#btnContacto:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 80px 3px rgba(255, 13, 170);
 }
 
 @keyframes arrow-animation {
@@ -78,6 +91,9 @@ h1 span {
 #arrowIcon {
   animation: arrow-animation 3s infinite;
   position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* Centra horizontalmente el objeto */
   bottom: 40px;
 }
 
@@ -85,7 +101,6 @@ h1 span {
 
 .indexSubtitle {
   font-weight: 500;
-  font-size: 12px;
   color: var(--color-accent);
   margin: 0;
 }
@@ -100,8 +115,6 @@ h1 span {
   justify-content: center;
   margin-bottom: 22px;
   user-select: none;
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(188, 37, 135, 0.65);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(188, 37, 135, 0.65);
   box-shadow: 0px 0px 50px -4px rgba(188, 37, 135, 0.45);
 }
 
@@ -400,13 +413,12 @@ button .active {
   line-height: 150%;
 }
 
-
 /* Estilos para pantallas más pequeñas que 576px */
 @media (max-width: 575.98px) {
   h1 {
     font-size: 1.5em;
   }
-  #logo{
+  #logo {
     width: 100px;
   }
 
@@ -414,7 +426,8 @@ button .active {
     font-size: 0.7em;
   }
 
-  #btnContacto, #btnServicios {
+  #btnContacto,
+  #btnServicios {
     font-size: 12px;
     width: 140px;
     height: 35px;
@@ -426,14 +439,15 @@ button .active {
   h1 {
     font-size: 2em;
   }
-  #logo{
+  #logo {
     width: 125px;
   }
   .textContainer p {
     font-size: 0.8em;
   }
 
-  #btnContacto, #btnServicios {
+  #btnContacto,
+  #btnServicios {
     font-size: 12px;
     width: 160px;
     height: 35px;
@@ -445,14 +459,15 @@ button .active {
   h1 {
     font-size: 2.5em;
   }
-  #logo{
+  #logo {
     width: 125px;
   }
   .textContainer p {
     font-size: 0.9em;
   }
 
-  #btnContacto, #btnServicios {
+  #btnContacto,
+  #btnServicios {
     font-size: 14px;
     width: 180px;
     height: 40px;
@@ -464,16 +479,36 @@ button .active {
   h1 {
     font-size: 3em;
   }
-  #logo{
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #logo {
     width: 150px;
   }
   .textContainer p {
     font-size: 1em;
   }
 
-  #btnContacto, #btnServicios {
-    font-size: 14px;
+  #btnContacto,
+  #btnServicios {
+    font-size: 1em;
     width: 200px;
     height: 40px;
   }
+
+  #sobreNosotros p {
+    font-size: 1.4em;
+    line-height: 200%;
+  }
+
+  #arrowIcon {
+    width: 40px;
+  }
+}
+
+#inicio {
+  background-color: #100f20;
+  background-image: url(../img/pattern.svg);
 }
