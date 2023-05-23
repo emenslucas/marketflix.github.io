@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 0 15px;
   scroll-margin-top: 100px;
 }
@@ -23,6 +23,11 @@ h1 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+#inicio {
+  background-color: #100f20;
+  background-image: url(../img/pattern.svg);
 }
 
 #inicio .container {
@@ -123,8 +128,33 @@ h1 span {
   text-decoration: underline var(--color-accent) 4px;
 }
 
+#sobreNosotros {
+  margin-bottom: 20px;
+}
+
 #sobreNosotros p {
   color: #b0b0b0;
+  height: fit-content;
+  margin: 0;
+}
+
+#sobreNosotros img {
+  width: 120px;
+}
+
+.img-container {
+  position: relative;
+}
+
+#circle {
+  width: 30px;
+  height: 30px;
+  background-color: #ec23a5;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  filter: blur(30px);
 }
 
 /* FIN SECCION SOBRE NOSOTROS */
@@ -139,14 +169,12 @@ h1 span {
 .card h3 {
   color: var(--color-accent);
   font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 1em;
 }
 
 .card p {
   color: #ffffff;
   font-weight: 400;
-  font-size: 14px;
+  line-height: 200%;
 }
 
 .card a {
@@ -410,7 +438,7 @@ button .active {
 }
 
 #serviciosPage h2 {
-  line-height: 150%;
+  line-height: 200%;
 }
 
 /* Estilos para pantallas más pequeñas que 576px */
@@ -418,6 +446,23 @@ button .active {
   h1 {
     font-size: 1.5em;
   }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  #serviciosPage h2 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.8em;
+  }
+
   #logo {
     width: 100px;
   }
@@ -439,9 +484,27 @@ button .active {
   h1 {
     font-size: 2em;
   }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #serviciosPage h2 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
   #logo {
     width: 125px;
   }
+
   .textContainer p {
     font-size: 0.8em;
   }
@@ -459,6 +522,23 @@ button .active {
   h1 {
     font-size: 2.5em;
   }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #serviciosPage h2 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
   #logo {
     width: 125px;
   }
@@ -484,6 +564,18 @@ button .active {
     font-size: 1em;
   }
 
+  #serviciosPage h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
   #logo {
     width: 150px;
   }
@@ -499,16 +591,11 @@ button .active {
   }
 
   #sobreNosotros p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 200%;
   }
 
   #arrowIcon {
     width: 40px;
   }
-}
-
-#inicio {
-  background-color: #100f20;
-  background-image: url(../img/pattern.svg);
 }
