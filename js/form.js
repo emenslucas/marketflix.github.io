@@ -8,4 +8,7 @@ window.onload = function () {
 
 function setFormSubmitted() {
   sessionStorage.setItem("formSubmitted", "true");
+  setTimeout(function () {
+    location.reload();
+  }, 1000); // Espera 1 segundo antes de recargar la página (ajusta el tiempo según tus necesidades)
 }
