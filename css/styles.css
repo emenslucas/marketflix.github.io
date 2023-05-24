@@ -62,7 +62,7 @@ h1 span {
 }
 
 #btnContacto {
-   background: rgba(112, 15, 78, 0.3);
+  background: rgba(112, 15, 78, 0.3);
   backdrop-filter: blur(5px);
   color: var(--color-accent);
 }
@@ -140,7 +140,6 @@ h1 span {
   text-decoration: underline var(--color-accent) 4px;
 }
 
-
 #sobreNosotros p {
   color: #b0b0b0;
   height: fit-content;
@@ -176,7 +175,7 @@ h1 span {
   height: 100%;
 }
 
-.card img{
+.card img {
   width: 60px;
 }
 
