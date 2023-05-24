@@ -111,7 +111,7 @@ h1 span {
   left: 0;
   right: 0;
   margin: 0 auto; /* Centra horizontalmente el objeto */
-  bottom: 80px;
+  bottom: 10vh;
 }
 
 /* FIN SECCION INICIO */
