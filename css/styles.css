@@ -166,6 +166,10 @@ h1 span {
   height: 100%;
 }
 
+.card img{
+  width: 60px;
+}
+
 .card h3 {
   color: var(--color-accent);
   font-weight: 500;
