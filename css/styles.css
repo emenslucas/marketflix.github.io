@@ -54,14 +54,16 @@ h1 span {
   justify-content: center;
 }
 
-#btnServicios {
+#btnServicios,
+#btnSubmit {
   background-color: var(--color-accent);
   color: white;
   border: none;
   transition: 0.3s;
 }
 
-#btnServicios:hover {
+#btnServicios:hover,
+#btnSubmit:hover {
   transition: 0.3s;
   background-color: rgba(209, 42, 150);
   filter: saturate(1.5);
