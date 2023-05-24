@@ -24,6 +24,10 @@ section.show {
   opacity: 1;
 }
 
+#serviciosPage {
+  opacity: 1;
+}
+
 h1 span {
   background: linear-gradient(124.21deg, var(--color-accent), #ffffff);
   -webkit-background-clip: text;
@@ -58,7 +62,8 @@ h1 span {
 }
 
 #btnServicios,
-#btnContacto, #btnSubmit {
+#btnContacto,
+#btnSubmit {
   border-radius: 2px;
   font-weight: 500;
   display: flex;
@@ -66,21 +71,23 @@ h1 span {
   justify-content: center;
 }
 
-#btnServicios, #btnSubmit {
+#btnServicios,
+#btnSubmit {
   transition: 0.3s;
   background-color: var(--color-accent);
   color: white;
   border: none;
 }
 
-#btnServicios:hover, #btnSubmit:hover {
+#btnServicios:hover,
+#btnSubmit:hover {
   transition: 0.3s;
   background-color: #a82279;
 }
 
-#btnSubmit{
-width: 100%;
-padding: 0.8em;
+#btnSubmit {
+  width: 100%;
+  padding: 0.8em;
 }
 
 #btnContacto {
