@@ -176,8 +176,7 @@ h1 span {
 }
 
 .highlight {
-  color: rgb(255, 255, 255);
-  text-decoration: underline var(--color-accent) 4px;
+  color: var(--color-accent);
 }
 
 #sobreNosotros p {
