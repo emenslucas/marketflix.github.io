@@ -97,8 +97,10 @@ $(function () {
    // Agregar controlador de eventos 'wheel' al objeto 'window'
    $(window).on('wheel', function() {
      if (isNavLinkClicked) {
-         changeNavItemColor();
-         isNavLinkClicked = false;
+         setTimeout(function() {
+           changeNavItemColor();
+           isNavLinkClicked = false;
+         },500);
      }
    });
 
