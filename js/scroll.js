@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "inicio", element: null },
     { id: "sobreNosotros", element: null },
     { id: "servicios", element: null },
-    { id: "contacto", element: null }
+    { id: "contacto", element: null },
   ];
 
   sections.forEach(function (section) {
@@ -19,10 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Llamar a isElementInViewport después de cargar la página
+  sections.forEach(function (section) {
+    if (isElementInViewport(section.element)) {
+      section.element.classList.add("show");
+    }
+  });
+
   // Función para verificar si un elemento está en el viewport
   function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
 
     // Verificar si el elemento está completamente visible o parcialmente visible en el viewport
     return (
