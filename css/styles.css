@@ -177,7 +177,7 @@ h1 span {
 }
 
 #sobreNosotros img {
-  width: 140px;
+  width: 9vw;
 }
 
 .img-container {
@@ -631,5 +631,15 @@ button .active {
 
   #arrowIcon {
     width: 40px;
+  }
+}
+
+/* Estilos para pantallas más grandes o iguales a 1764px*/
+@media (min-width: 1764px) {
+  #sobreNosotros p {
+    line-height: 400%;
+  }
+
+  #sobreNosotros img {
   }
 }
