@@ -1,9 +1,7 @@
-var fragment = window.location.hash;
+var contactoBtn = document.getElementById("contacto-btn");
 
-// Verifica si hay un fragmento y realiza el desplazamiento
-if (fragment) {
-  var section = document.querySelector(fragment);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-}
+// Agrega un controlador de evento para el clic en el botón
+contactoBtn.addEventListener("click", function () {
+  // Redirige a index.html y agrega el fragmento "#contacto" en la URL
+  window.location.href = "index.html#contacto";
+});
