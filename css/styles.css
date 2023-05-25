@@ -649,3 +649,10 @@ button .active {
     width: 40px;
   }
 }
+
+/* Estilos para pantallas más grandes o iguales a 991px y más pequeñas que 1324px */
+@media (min-width: 992px) and (max-width: 1324px) {
+  #serviciosPage {
+    margin: 80px 0;
+  }
+}
