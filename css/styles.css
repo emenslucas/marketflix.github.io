@@ -6,6 +6,16 @@
   --color-accent: #d12a96;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: var(--color-accent);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: var(--color-accent);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-primary);
