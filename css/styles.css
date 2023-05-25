@@ -488,15 +488,7 @@ button .active {
 }
 
 .servicioLink {
-  font-weight: 500;
-  font-size: 15px;
-  color: var(--color-accent);
-  text-decoration: none;
-  width: fit-content;
-}
-
-.servicioLink:hover {
-  text-decoration: underline;
+  float: right !important;
 }
 
 /* Estilos para pantallas más pequeñas que 576px */
