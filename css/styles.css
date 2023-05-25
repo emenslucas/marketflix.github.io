@@ -15,7 +15,7 @@ body {
 section {
   margin-bottom: 60px;
   padding: 0 15px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 200px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -140,7 +140,7 @@ h1 span {
   left: 0;
   right: 0;
   margin: 0 auto; /* Centra horizontalmente el objeto */
-  bottom: 10vh;
+  bottom: 10%;
 }
 
 /* FIN SECCION INICIO */
