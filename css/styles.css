@@ -91,9 +91,22 @@ h1 span {
 }
 
 #btnServicios:hover,
-#btnSubmit:hover {
+#btnSubmit:hover, .btnServiciosPage:hover {
   transition: 0.3s;
   background-color: #a82279;
+}
+
+.btnServiciosPage{
+  background-color: var(--color-accent);
+  transition: 0.3s;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.btnServiciosPageContainer{
+  display: flex;
+  justify-content: end;
 }
 
 #btnSubmit {
@@ -493,6 +506,11 @@ button .active {
 
 /* Estilos para pantallas más pequeñas que 576px */
 @media (max-width: 575.98px) {
+  
+  .btnServiciosPage{
+    width: 100%;
+  }
+
   h1 {
     font-size: 1.5em;
   }
@@ -531,6 +549,11 @@ button .active {
 
 /* Estilos para pantallas más grandes o iguales a 576px y más pequeñas que 768px */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  
+  .btnServiciosPage{
+    width: 100%;
+  }
+
   h1 {
     font-size: 2em;
   }
@@ -569,6 +592,11 @@ button .active {
 
 /* Estilos para pantallas más grandes o iguales a 768px y más pequeñas que 992px */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  
+  .btnServiciosPage{
+    width: 100%;
+  }
+ 
   h1 {
     font-size: 2.5em;
   }
