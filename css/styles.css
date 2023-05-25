@@ -488,6 +488,18 @@ button .active {
   line-height: 200%;
 }
 
+.servicioLink {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-accent);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.servicioLink:hover {
+  text-decoration: underline;
+}
+
 /* Estilos para pantallas más pequeñas que 576px */
 @media (max-width: 575.98px) {
   h1 {
