@@ -91,8 +91,7 @@ h1 span {
 }
 
 #btnServicios:hover,
-#btnSubmit:hover,
-.serviciosPageBtn:hover {
+#btnSubmit:hover {
   transition: 0.3s;
   background-color: #a82279;
 }
@@ -488,20 +487,8 @@ button .active {
   line-height: 200%;
 }
 
-.serviciosPageBtnContainer {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-
-.serviciosPageBtn {
-  background-color: var(--color-accent);
-  color: white;
-  border-radius: 2px;
-  width: fit-content;
-}
-
-.serviciosPageBtn:hover {
+.servicioLink {
+  float: right !important;
 }
 
 /* Estilos para pantallas más pequeñas que 576px */
@@ -524,10 +511,6 @@ button .active {
 
   .card p {
     font-size: 0.8em;
-  }
-
-  .serviciosPageBtn {
-    width: 100%;
   }
 
   #logo {
@@ -564,10 +547,6 @@ button .active {
     font-size: 1em;
   }
 
-  .serviciosPageBtn {
-    width: 100%;
-  }
-
   .card p {
     font-size: 0.9em;
   }
@@ -600,10 +579,6 @@ button .active {
 
   h3 {
     font-size: 1.5em;
-  }
-
-  .serviciosPageBtn {
-    width: 100%;
   }
 
   #serviciosPage h2 {
