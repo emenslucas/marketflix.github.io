@@ -5,8 +5,6 @@ $(function () {
   var clickCount = 0;
   var currentSectionId = null;
   var $navbarBrand = $(".navbar-brand");
-  var $navbarToggler = $(".navbar-toggler");
-  var $navbarCollapse = $(".navbar-collapse");
 
   function updateNavbarSubContainerWidth() {
     var isCollapseHidden =

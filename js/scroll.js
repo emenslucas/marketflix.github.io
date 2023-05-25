@@ -1,31 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var inicio = document.getElementById("inicio");
-  var sobreNosotros = document.getElementById("sobreNosotros");
-  var servicios = document.getElementById("servicios");
-  var contacto = document.getElementById("contacto");
+  var sections = [
+    { id: "inicio", element: null },
+    { id: "sobreNosotros", element: null },
+    { id: "servicios", element: null },
+    { id: "contacto", element: null }
+  ];
 
-  inicio.classList.add("show");
+  sections.forEach(function (section) {
+    section.element = document.getElementById(section.id);
+  });
+
+  sections[0].element.classList.add("show");
   window.addEventListener("scroll", function () {
-    if (isElementInViewport(sobreNosotros)) {
-      sobreNosotros.classList.add("show");
-    }
-
-    if (isElementInViewport(servicios)) {
-      servicios.classList.add("show");
-    }
-
-    if (isElementInViewport(contacto)) {
-      contacto.classList.add("show");
-    }
+    sections.forEach(function (section) {
+      if (isElementInViewport(section.element)) {
+        section.element.classList.add("show");
+      }
+    });
   });
 
   // Función para verificar si un elemento está en el viewport
   function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
     var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
-  
-    // Verificar si el elemento estÃ¡ completamente visible o parcialmente visible en el viewport
+
+    // Verificar si el elemento está completamente visible o parcialmente visible en el viewport
     return (
       (rect.top >= 0 && rect.bottom <= windowHeight) ||
       (rect.top <= 0 && rect.bottom >= 0) ||
