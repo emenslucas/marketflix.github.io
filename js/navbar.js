@@ -6,6 +6,23 @@ $(function () {
   var currentSectionId = null;
   var $navbarBrand = $(".navbar-brand");
 
+  function resetNavbarOnResize() {
+    var isMobileView = window.innerWidth < 992; // Ajusta este valor según tus necesidades
+
+    if (!isMobileView) {
+      $(".navbar-collapse").removeClass("show");
+      $(".navbar-toggler").addClass("collapsed").attr("aria-expanded", "false");
+      $navbarSubContainer.removeClass("scrolled");
+      $navbarNav.removeClass("bg-color");
+      clickCount = 0;
+      currentSectionId = null;
+      updateNavbarSubContainerWidth();
+      changeNavItemColor();
+    }
+  }
+
+  $(window).on("resize", resetNavbarOnResize);
+
   function updateNavbarSubContainerWidth() {
     var isCollapseHidden =
       $(".navbar-collapse").is(":hidden") ||
