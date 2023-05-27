@@ -678,8 +678,7 @@ button .active {
   }
 }
 
-/* Estilos para pantallas más grandes o iguales a 991px y más pequeñas que 1324px */
-@media (min-width: 992px) and (max-width: 1324px) {
+@media (max-height: 900px) {
   #serviciosPage {
     margin: 80px 0;
   }
